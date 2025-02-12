@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold d-flex align-items-center" routerLink="/">
+        🍔 <span class="ms-2">Food Zone</span>
+      </a>
+  
+      <!-- Mobile Toggle Button -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- Home -->
+          <li class="nav-item">
+            <a class="nav-link px-3" routerLink="/">🏠 Home</a>
+          </li>
+  
+          <!-- Cart -->
+          <li class="nav-item">
+            <a class="nav-link px-3 position-relative" routerLink="/cart">
+              🛒 Cart
+              <span *ngIf="cartCount > 0" 
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger">
+                {{ cartCount }}
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  

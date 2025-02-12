@@ -1,0 +1,31 @@
+/* Hero Section styling */
+.hero-section {
+    position: relative;
+    /* Optional: overlay effect */
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Food Image styling */
+  .food-image {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .food-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Card Body */
+  .card-body {
+    background-color: #fff;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .hero-section {
+      height: 300px;
+    }
+  }
+  
