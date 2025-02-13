@@ -11,7 +11,6 @@ export class HeaderComponent {
   cartCount = 0;
   showLogout =true
   constructor(private cartService: CartService, private router: Router) {
-    // Subscribe to cart changes and update the cart count
     this.cartService.cart$.subscribe(items => {
       this.cartCount = items.reduce((sum, item) => sum + item.quantity, 0);
     });
