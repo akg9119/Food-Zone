@@ -1,4 +1,3 @@
-<!-- Toast Notification -->
 <div aria-live="polite" aria-atomic="true" class="position-fixed top-0 end-0 p-3" style="z-index: 1050;">
     <div *ngIf="showPopup" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
@@ -12,18 +11,14 @@
     </div>
   </div>
   
-  <!-- Hero Section -->
   <div class="hero-section d-flex align-items-center justify-content-center text-white" 
-       style="background-image: url('https://picsum.photos/id/196/1920/600'); 
+       style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyZnUWk14oXn2AG3vFDrp_568dCdH7iDtoMA&s'); 
               background-size: cover; background-position: center; height: 400px;">
     <div class="text-center">
       <h1 class="display-4 fw-bold">Delicious Food Delivered Fast</h1>
       <p class="lead">Order your favorite meals from local restaurants</p>
-      <!-- <a routerLink="/menu" class="btn btn-lg btn-primary mt-3">View Menu</a> -->
     </div>
   </div>
-  
-  <!-- Food Items Grid -->
   <div class="container mt-5">
     <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
       <div class="col" *ngFor="let item of foodItems">

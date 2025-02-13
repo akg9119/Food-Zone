@@ -8,8 +8,6 @@ import { CartService } from '../services/cart.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  // If your FoodService still returns static data, this works directly.
-  // If using an Observable (from an API), consider using the async pipe.
   foodItems = this.foodService.getAllFoodItems();
 
   showPopup: boolean = false;
@@ -22,10 +20,8 @@ export class HomeComponent {
   addToCart(item: any): void {
     this.cartService.addToCart(item);
 
-    // Show toast notification
     this.showPopup = true;
 
-    // Automatically hide the toast after 3 seconds
     setTimeout(() => {
       this.showPopup = false;
     }, 3000);
